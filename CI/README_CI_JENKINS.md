@@ -149,7 +149,7 @@ ngrok http 8080
 
 Ngrok выдаст публичный URL. Используйте его для настройки вебхука в репозитории GitHub.
 
-## 11. Выствление Webhook
+## 11. Выставление Webhook
 
 Перейдите в Github проект -> Settings -> Webhooks
 

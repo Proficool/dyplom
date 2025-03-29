@@ -1,5 +1,15 @@
 FROM python:3.9-slim
 
+# Установка необходимых пакетов для работы с локалями
+RUN apt-get update && \
+    apt-get install -y locales && \
+    echo "ru_RU.UTF-8 UTF-8" > /etc/locale.gen && \
+    locale-gen ru_RU.UTF-8 && \
+    update-locale LANG=ru_RU.UTF-8
+
+# Установка pytest-check
+RUN pip install pytest-check
+
 WORKDIR /app
 
 COPY requirements.txt .

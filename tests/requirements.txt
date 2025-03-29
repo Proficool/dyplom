@@ -9,3 +9,4 @@ psycopg2-binary==2.9.5
 jsonschema
 pytest-flake8
 webdriver-manager
+pytest-check
